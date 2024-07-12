@@ -4,7 +4,7 @@ import {
   UserButton,
 } from "@/components/_shared/btnActions";
 import { Container } from "@/components/_shared/container";
-import { DesktopMenu } from "@/components/_shared/menu";
+import { DesktopMenu, MobileMenu } from "@/components/_shared/menu";
 import { SearchForm } from "@/components/_shared/searchForm";
 import Image from "next/image";
 
@@ -13,6 +13,7 @@ export const Header = () => {
     <header className="w-full pt-6 pb-2">
       <Container>
         <div className="flex items-center justify-between">
+          <MobileMenu />
           <div className="flex items-center justify-between gap-12 xl:gap-16">
             <Image src="/logo.png" width={160} height={66} alt="logo do site" />
 

@@ -8,7 +8,7 @@ import {
 import { cn } from "@/lib/utils";
 import { CircleUserRound, LogOut } from "lucide-react";
 
-export const UserButton = ({ className }: { className: string }) => {
+export const UserButton = ({ className }: { className?: string }) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
