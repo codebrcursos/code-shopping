@@ -1,1 +1,1 @@
-
+export { ProductCard } from "./card";

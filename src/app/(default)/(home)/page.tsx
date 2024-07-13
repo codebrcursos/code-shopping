@@ -1,5 +1,6 @@
 import { Container } from "@/components/_shared/container";
 import { Title } from "@/components/_shared/title";
+import { FeaturedCarousel } from "@/components/carousel";
 import { HeroImage } from "@/components/hero";
 import { ProductCard } from "@/components/product/card";
 import type { Metadata } from "next";
@@ -24,11 +25,13 @@ export default function HomePage() {
           Produtos em destaque
         </Title>
 
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-4">
-            <ProductCard />
-          </div>
-        </div>
+        <FeaturedCarousel />
+
+        <Title tag="h2" fontWeight="normal" className="mb-8 mt-2 text-pink-400">
+          Produtos em pomoção
+        </Title>
+
+        <FeaturedCarousel />
       </section>
     </Container>
   );
