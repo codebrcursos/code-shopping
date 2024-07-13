@@ -1,4 +1,5 @@
 import { Container } from "@/components/_shared/container";
+import { HeroImage } from "@/components/hero";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,7 +9,13 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <Container>
-      <h1>home page</h1>
+      <HeroImage
+        src="/banner-1.png"
+        width={1920}
+        height={720}
+        alt="Banner com 4  mulheres"
+        className="rounded-2xl overflow-hidden"
+      />
     </Container>
   );
 }
