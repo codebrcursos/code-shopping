@@ -1,4 +1,5 @@
 import { Container } from "@/components/_shared/container";
+import { Section } from "@/components/_shared/section";
 import { Title } from "@/components/_shared/title";
 import { FeaturedCarousel } from "@/components/carousel";
 import { HeroImage } from "@/components/hero";
@@ -20,7 +21,7 @@ export default function HomePage() {
         className="rounded-2xl overflow-hidden"
       />
 
-      <section>
+      <Section>
         <Title tag="h2" fontWeight="normal" className="mb-8 mt-2 text-pink-400">
           Produtos em destaque
         </Title>
@@ -32,7 +33,7 @@ export default function HomePage() {
         </Title>
 
         <FeaturedCarousel />
-      </section>
+      </Section>
     </Container>
   );
 }
